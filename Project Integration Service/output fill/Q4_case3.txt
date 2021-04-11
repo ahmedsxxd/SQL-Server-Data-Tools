@@ -1,0 +1,9 @@
+Top_Id,Top_Name,Crs_Id,Crs_Name,Crs_Duration,Copy of Crs_Name
+3,,1000,ASP.Net,60,asp.net
+1,,200,C Progamming,60,c progamming
+1,,600,C#,80,c#
+1,,800,Java,60,java
+1,,300,OOP,80,oop
+2,,900,Oracle,50,oracle
+2,,500,SQL Server,60,sql server
+4,,400,Unix,50,unix

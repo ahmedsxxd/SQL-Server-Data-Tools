@@ -1,0 +1,17 @@
+Crs_Id,Top_Id,Top_Nmae,Crs_Name,Crs_Duration
+,1,Programming,,
+,4,Operating System,,
+,5,Design,,
+,2,DB,,
+,3,Web,,
+1000,3,,ASP.Net,60
+200,1,,C Progamming,60
+600,1,,C#,80
+100,3,,HTML,20
+800,1,,Java,60
+300,1,,OOP,80
+900,2,,Oracle,50
+500,2,,SQL Server,60
+400,4,,Unix,50
+700,3,,Web Service,20
+1100,4,,Win_XP,20

@@ -1,0 +1,2600 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/21/2021 6:27:48 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-K80UDDF"
+  DTS:CreatorName="DESKTOP-K80UDDF\ahmed"
+  DTS:DTSID="{BFFC2EDD-5BE4-4FC9-9EA2-11CB9ACE93A1}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.150"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Q4"
+  DTS:PackageType="5"
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{D8CEAA41-E678-4E15-83FB-15A10EA24B34}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9AC390BE-B2BA-45F9-90AF-34B69C25FB32}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\ahmed\OneDrive\Desktop\BI mina\Q4_case1.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Id"
+              DTS:DTSID="{0BF6FD78-4DB6-4982-B9E3-7AE0BAAE03A4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Name"
+              DTS:DTSID="{0E623BE3-8847-4C2B-949E-2F04D9F0FCAE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Id"
+              DTS:DTSID="{B4F87ABE-113E-4E68-A5E9-9099EC7BAFFC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Name"
+              DTS:DTSID="{1CFEE35E-52A5-48BF-B11C-E8A18495EBBA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Duration"
+              DTS:DTSID="{6D62EFD8-862C-4ABB-A9C6-3E3F92EB6326}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of Crs_Name"
+              DTS:DTSID="{534B28F0-E18C-41E8-9F03-DFDA3AEBC2C5}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6F245087-5F40-4B59-91F8-44A1075CD2E4}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\BI iti\BI\day1\ass\fill\Q4_case1.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Id"
+              DTS:DTSID="{4784BC17-A1FF-4724-8438-FACD367B9DB7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Name"
+              DTS:DTSID="{94A16ADA-C6BC-450C-BC79-6BC242E70389}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Id"
+              DTS:DTSID="{6BC9EC03-58BA-4463-A7E8-4C628AB4F482}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Name"
+              DTS:DTSID="{FFAEAE79-433C-4A7C-812E-FA5735F916DC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Duration"
+              DTS:DTSID="{0A331D14-DD00-4F49-880E-51AD128781B4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of Crs_Name"
+              DTS:DTSID="{16924CF0-5E57-4454-BDA4-57DC1336E032}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F6B2CC11-9219-4E1D-9F36-72B34442F287}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\BI iti\BI\day1\ass\fill\Q4_case1.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Id"
+              DTS:DTSID="{C062854E-8E27-4E81-8BBD-FA712553978E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Name"
+              DTS:DTSID="{76562621-A5F9-4169-8328-495E92726E7A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Id"
+              DTS:DTSID="{7E1CE767-0A77-4A84-AAA5-A2E77DD68ACB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Name"
+              DTS:DTSID="{06AE8A2C-993B-4FEC-AB14-631254BF89FD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Duration"
+              DTS:DTSID="{8C47C140-F7C1-4A73-ADF3-CCC0E54B4737}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of Crs_Name"
+              DTS:DTSID="{F60A2A4E-07C8-4CA6-A838-0890221F7B96}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{3338BA7C-8AF3-4955-8A3D-60489F8F4246}"
+      DTS:ObjectName="Flat File Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\BI iti\BI\day1\ass\fill\Q4_case2.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Id"
+              DTS:DTSID="{53F34E30-1F40-443F-8F99-66F59AC4530B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Name"
+              DTS:DTSID="{8F26537C-BA58-4A04-8853-D1401874B474}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Id"
+              DTS:DTSID="{23144B9D-B8FD-4C2E-A24A-99251FB2C65A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Name"
+              DTS:DTSID="{0A0071F2-BFC1-4DE3-A745-982971DEC01A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Duration"
+              DTS:DTSID="{481BBC39-DD04-4F69-BB87-B5D752D7A7FB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of Crs_Name"
+              DTS:DTSID="{A1055748-F040-4B30-B649-C4D8EF3D314A}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 4]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{69C90B49-48EE-4687-BD2B-41C565F5316B}"
+      DTS:ObjectName="Flat File Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\BI iti\BI\day1\ass\fill\Q4_case3.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Id"
+              DTS:DTSID="{892B5405-6563-484E-8758-5201B1F6926B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Name"
+              DTS:DTSID="{97ED355A-67B7-4F3B-A6C2-7F06D81365DE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Id"
+              DTS:DTSID="{3BFD0ADA-CD6F-40BF-B4DD-FF91B8642453}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Name"
+              DTS:DTSID="{B5EE483A-9DEF-4895-871F-067B62E394CB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Duration"
+              DTS:DTSID="{61C9B272-00EF-4483-B12C-5A93AAF44F70}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of Crs_Name"
+              DTS:DTSID="{10372925-B13F-458F-B269-87B1F37FC5D3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 5]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6083F0C8-6BD2-459C-A361-2DC2BCFABCA8}"
+      DTS:ObjectName="Flat File Connection Manager 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\ahmed\OneDrive\Desktop\BI mina\Q4_case2.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Id"
+              DTS:DTSID="{61A49600-E6DA-4A70-99DC-2B8FBE68D10C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Name"
+              DTS:DTSID="{99FA42CD-55CC-4FC1-8824-691506FA7D20}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Id"
+              DTS:DTSID="{E25B96A3-CEED-4AEB-8733-FA41D39ED660}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Name"
+              DTS:DTSID="{6FFA5296-5213-4162-94FA-91AB2830B0C4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Duration"
+              DTS:DTSID="{74DA23ED-66A1-4088-9EF7-F6D1190E4226}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of Crs_Name"
+              DTS:DTSID="{B7D713FF-F553-4A03-A96A-F1932410AB50}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 6]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{CB33A8D3-2516-4EC1-A0B3-E66DA11A4BAF}"
+      DTS:ObjectName="Flat File Connection Manager 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\ahmed\OneDrive\Desktop\BI mina\Q4_case3.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Id"
+              DTS:DTSID="{A6F5C267-72CA-4D74-AC97-83123FECB188}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Name"
+              DTS:DTSID="{A0388DEB-7748-4624-99EC-ABD4EE2DE6FB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Id"
+              DTS:DTSID="{9690EFAB-569E-438E-92C6-C8B1C04031AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Name"
+              DTS:DTSID="{54C55715-FA2E-4909-AC97-C541740F0546}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Duration"
+              DTS:DTSID="{59073B9E-E1BD-43E5-82FF-F7FFCF1D2B6F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of Crs_Name"
+              DTS:DTSID="{64937883-AE27-4E88-A677-F7453AC43174}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.ITI]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{9938B8F3-953A-4129-A228-9B31502B332A}"
+      DTS:ObjectName="LocalHost.ITI">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=.;Initial Catalog=ITI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Q4_case2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{096C4B13-A8C5-4118-B6ED-EC89AE7219A3}"
+      DTS:ObjectName="Q4_case2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="4096"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\BI iti\BI\day1\ass\fill">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Id"
+              DTS:DTSID="{CD6DBB7D-CFC7-402F-8A33-18ED0782D8BA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Name"
+              DTS:DTSID="{88A9C83E-780E-4A0C-8F27-6A8E2FE93694}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Id"
+              DTS:DTSID="{A0186696-725B-4E15-82C2-0354D3494A24}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Name"
+              DTS:DTSID="{F259AE9F-EDDD-481B-8E2F-E508DBC7317F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Duration"
+              DTS:DTSID="{AAE43368-C6BD-412B-AF97-0376C611C4D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of Crs_Name"
+              DTS:DTSID="{F60FD604-9171-4A00-88D6-279A2E9E0AFA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Q4_case3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{EF230F0C-E5B7-4354-98D8-312B7D1B9D74}"
+      DTS:ObjectName="Q4_case3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\BI iti\BI\day1\ass\fill\Q4_case3.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Id"
+              DTS:DTSID="{13B9EEF7-E483-4B9A-859A-FA70316D8F3E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Top_Name"
+              DTS:DTSID="{DF560DF1-BD0A-4325-AC45-5C56933EE66E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Id"
+              DTS:DTSID="{03A1409D-C224-49A6-B3FF-11B7865C2116}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Name"
+              DTS:DTSID="{F2CBD9F5-279C-4497-939E-FF548963AC26}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Crs_Duration"
+              DTS:DTSID="{2FE3E33C-1D5A-4FF6-94BB-183760FEEBFA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of Crs_Name"
+              DTS:DTSID="{AB3CA29A-DABC-463D-93D0-1887F019ECDE}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D6341A84-CB0E-4985-928D-30E504895D1B}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Character Map"
+              componentClassID="Microsoft.CharacterMap"
+              contactInfo="Character Map;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Applies string functions to character data. For example, convert from data that is in upper case to lower case. Operates only on column data with a string data type."
+              name="Character Map"
+              usesDispositions="true"
+              version="2">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Character Map.Inputs[Character Map Input]"
+                  name="Character Map Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Character Map.Inputs[Character Map Input].Columns[Crs_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Crs_Name"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Name]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Character Map.Outputs[Character Map Output]"
+                  exclusionGroup="1"
+                  name="Character Map Output"
+                  synchronousInputId="Package\Data Flow Task\Character Map.Inputs[Character Map Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Character Map.Outputs[Character Map Output].Columns[Copy of Crs_Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Map Column"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Character Map.Outputs[Character Map Output].Columns[Copy of Crs_Name]"
+                      name="Copy of Crs_Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.UInt32"
+                          description="Specifies the string operations to apply."
+                          name="MapFlags"
+                          typeConverter="LCMappingType">256</property>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column to which operations apply."
+                          name="InputColumnLineageID">#{Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Name]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Character Map.Outputs[Character Map Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Character Map Error Output"
+                  synchronousInputId="Package\Data Flow Task\Character Map.Inputs[Character Map Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Character Map.Outputs[Character Map Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Character Map.Outputs[Character Map Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Character Map.Outputs[Character Map Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Character Map.Outputs[Character Map Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input].Columns[Crs_Duration]"
+                      cachedDataType="i4"
+                      cachedName="Crs_Duration"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Duration]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Case 1]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Case 1"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[REPLACENULL](#{Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Duration]},0) &lt; 30</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">REPLACENULL(Crs_Duration,0) &lt; 30</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Case 2]"
+                  description="Output 2 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Case 2"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[REPLACENULL](#{Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Duration]},0) == 30</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">REPLACENULL(Crs_Duration,0) == 30</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">1</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Case 3]"
+                  description="Output 3 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Case 3"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[REPLACENULL](#{Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Duration]},0) &gt; 30</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">REPLACENULL(Crs_Duration,0) &gt; 30</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">2</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Top_Id]"
+                      cachedDataType="i4"
+                      cachedName="Top_Id"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Top_Id]"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Top_Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Top_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Top_Name"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Top_Name]"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Top_Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Crs_Id]"
+                      cachedDataType="i4"
+                      cachedName="Crs_Id"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Crs_Id]"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Crs_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Crs_Name"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Crs_Name]"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Crs_Duration]"
+                      cachedDataType="i4"
+                      cachedName="Crs_Duration"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Crs_Duration]"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Duration]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Copy of Crs_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Crs_Name"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of Crs_Name]"
+                      lineageId="Package\Data Flow Task\Character Map.Outputs[Character Map Output].Columns[Copy of Crs_Name]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Top_Id]"
+                      dataType="i4"
+                      name="Top_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Top_Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Top_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Crs_Id]"
+                      dataType="i4"
+                      name="Crs_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Crs_Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Crs_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Crs_Duration]"
+                      dataType="i4"
+                      name="Crs_Duration" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of Crs_Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Copy of Crs_Name" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Flat File Destination 1"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Flat File Destination 1.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 5]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 5]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Top_Id]"
+                      cachedDataType="i4"
+                      cachedName="Top_Id"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Top_Id]"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Top_Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Top_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Top_Name"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Top_Name]"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Top_Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Crs_Id]"
+                      cachedDataType="i4"
+                      cachedName="Crs_Id"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Crs_Id]"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Crs_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Crs_Name"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Crs_Name]"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Crs_Duration]"
+                      cachedDataType="i4"
+                      cachedName="Crs_Duration"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Crs_Duration]"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Duration]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of Crs_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Crs_Name"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Crs_Name]"
+                      lineageId="Package\Data Flow Task\Character Map.Outputs[Character Map Output].Columns[Copy of Crs_Name]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Top_Id]"
+                      dataType="i4"
+                      name="Top_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Top_Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Top_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Crs_Id]"
+                      dataType="i4"
+                      name="Crs_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Crs_Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Crs_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Crs_Duration]"
+                      dataType="i4"
+                      name="Crs_Duration" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Crs_Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Copy of Crs_Name" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Flat File Destination 2"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination 2"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Flat File Destination 2.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 6]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 6]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].Columns[Top_Id]"
+                      cachedDataType="i4"
+                      cachedName="Top_Id"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[Top_Id]"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Top_Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].Columns[Top_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Top_Name"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[Top_Name]"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Top_Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].Columns[Crs_Id]"
+                      cachedDataType="i4"
+                      cachedName="Crs_Id"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[Crs_Id]"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].Columns[Crs_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Crs_Name"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[Crs_Name]"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].Columns[Crs_Duration]"
+                      cachedDataType="i4"
+                      cachedName="Crs_Duration"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[Crs_Duration]"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Duration]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].Columns[Copy of Crs_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Crs_Name"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[Copy of Crs_Name]"
+                      lineageId="Package\Data Flow Task\Character Map.Outputs[Character Map Output].Columns[Copy of Crs_Name]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[Top_Id]"
+                      dataType="i4"
+                      name="Top_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[Top_Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Top_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[Crs_Id]"
+                      dataType="i4"
+                      name="Crs_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[Crs_Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Crs_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[Crs_Duration]"
+                      dataType="i4"
+                      name="Crs_Duration" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[Copy of Crs_Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Copy of Crs_Name" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Merge"
+              componentClassID="Microsoft.Merge"
+              contactInfo="Merge;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple sorted data flows into one sorted data flow. Unlike the Merge Join, all rows flow to the output. For example, combine two sorted lists of customers into a single sorted list. If sorting is not important, use the Union All transformation. "
+              name="Merge"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Merge.Inputs[Merge Input 1]"
+                  name="Merge Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge.Inputs[Merge Input 1].Columns[Top_Id]"
+                      cachedDataType="i4"
+                      cachedName="Top_Id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Top_Id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Top_Id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge.Inputs[Merge Input 1].Columns[Crs_Id]"
+                      cachedDataType="i4"
+                      cachedName="Crs_Id"
+                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Crs_Id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Crs_Id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge.Inputs[Merge Input 1].Columns[Crs_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Crs_Name"
+                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Crs_Name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Crs_Name]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge.Inputs[Merge Input 1].Columns[Crs_Duration]"
+                      cachedDataType="i4"
+                      cachedName="Crs_Duration"
+                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Crs_Duration]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Crs_Duration]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\Merge.Inputs[Merge Input 2]"
+                  name="Merge Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge.Inputs[Merge Input 2].Columns[Top_Id]"
+                      cachedDataType="i4"
+                      cachedName="Top_Id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Top_Id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Top_Id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge.Inputs[Merge Input 2].Columns[Top_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Top_Name"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Top_Name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Top_Name]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Merge.Outputs[Merge Output 1]"
+                  isSorted="true"
+                  name="Merge Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Top_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Top_Id]"
+                      name="Top_Id"
+                      sortKeyPosition="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Top_Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Top_Name]"
+                      name="Top_Name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Crs_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Crs_Id]"
+                      name="Crs_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Crs_Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Crs_Name]"
+                      name="Crs_Name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Crs_Duration]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Crs_Duration]"
+                      name="Crs_Duration" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Topic]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.ITI]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.ITI]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Top_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Top_Id]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Top_Id]"
+                      name="Top_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Top_Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Top_Name]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Top_Name]"
+                      name="Top_Name"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Top_Id]"
+                      dataType="i4"
+                      name="Top_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Top_Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Top_Name" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Top_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Top_Id]"
+                      name="Top_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Top_Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Top_Name]"
+                      name="Top_Name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Source 1"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source 1"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Course]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Source 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.ITI]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.ITI]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Crs_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].ExternalColumns[Crs_Id]"
+                      lineageId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Crs_Id]"
+                      name="Crs_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Crs_Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].ExternalColumns[Crs_Name]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Crs_Name]"
+                      name="Crs_Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Crs_Duration]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].ExternalColumns[Crs_Duration]"
+                      lineageId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Crs_Duration]"
+                      name="Crs_Duration"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Top_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].ExternalColumns[Top_Id]"
+                      lineageId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Top_Id]"
+                      name="Top_Id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].ExternalColumns[Crs_Id]"
+                      dataType="i4"
+                      name="Crs_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].ExternalColumns[Crs_Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Crs_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].ExternalColumns[Crs_Duration]"
+                      dataType="i4"
+                      name="Crs_Duration" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].ExternalColumns[Top_Id]"
+                      dataType="i4"
+                      name="Top_Id" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Error Output].Columns[Crs_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Error Output].Columns[Crs_Id]"
+                      name="Crs_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Error Output].Columns[Crs_Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Error Output].Columns[Crs_Name]"
+                      name="Crs_Name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Error Output].Columns[Crs_Duration]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Error Output].Columns[Crs_Duration]"
+                      name="Crs_Duration" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Error Output].Columns[Top_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Error Output].Columns[Top_Id]"
+                      name="Top_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Sort"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[Top_Id]"
+                      cachedDataType="i4"
+                      cachedName="Top_Id"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Top_Id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[Top_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Top_Name"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Top_Name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Sort.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Top_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Top_Id]"
+                      name="Top_Id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Top_Id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Top_Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Top_Name]"
+                      name="Top_Name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Top_Name]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Sort 1"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Sort 1.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 1.Inputs[Sort Input].Columns[Crs_Id]"
+                      cachedDataType="i4"
+                      cachedName="Crs_Id"
+                      lineageId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Crs_Id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 1.Inputs[Sort Input].Columns[Crs_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Crs_Name"
+                      lineageId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Crs_Name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 1.Inputs[Sort Input].Columns[Crs_Duration]"
+                      cachedDataType="i4"
+                      cachedName="Crs_Duration"
+                      lineageId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Crs_Duration]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 1.Inputs[Sort Input].Columns[Top_Id]"
+                      cachedDataType="i4"
+                      cachedName="Top_Id"
+                      lineageId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Top_Id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Sort 1.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Crs_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Crs_Id]"
+                      name="Crs_Id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Crs_Id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Crs_Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Crs_Name]"
+                      name="Crs_Name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Crs_Name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Crs_Duration]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Crs_Duration]"
+                      name="Crs_Duration">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Crs_Duration]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Top_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Top_Id]"
+                      name="Top_Id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output].Columns[Top_Id]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Sort 2"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort 2"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Sort 2.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 2.Inputs[Sort Input].Columns[Top_Id]"
+                      cachedDataType="i4"
+                      cachedName="Top_Id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Top_Id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 2.Inputs[Sort Input].Columns[Top_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Top_Name"
+                      lineageId="Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Top_Name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 2.Inputs[Sort Input].Columns[Crs_Id]"
+                      cachedDataType="i4"
+                      cachedName="Crs_Id"
+                      lineageId="Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Crs_Id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 2.Inputs[Sort Input].Columns[Crs_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Crs_Name"
+                      lineageId="Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Crs_Name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 2.Inputs[Sort Input].Columns[Crs_Duration]"
+                      cachedDataType="i4"
+                      cachedName="Crs_Duration"
+                      lineageId="Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Crs_Duration]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Sort 2.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Top_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Top_Id]"
+                      name="Top_Id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Top_Id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Top_Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Top_Name]"
+                      name="Top_Name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Top_Name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Id]"
+                      name="Crs_Id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Crs_Id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Name]"
+                      name="Crs_Name"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Crs_Name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Duration]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Crs_Duration]"
+                      name="Crs_Duration">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Merge.Outputs[Merge Output 1].Columns[Crs_Duration]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Case 1]"
+              endId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Case 1"
+              startId="Package\Data Flow Task\Conditional Split.Outputs[Case 1]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Case 2]"
+              endId="Package\Data Flow Task\Flat File Destination 1.Inputs[Flat File Destination Input]"
+              name="Case 2"
+              startId="Package\Data Flow Task\Conditional Split.Outputs[Case 2]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Case 3]"
+              endId="Package\Data Flow Task\Flat File Destination 2.Inputs[Flat File Destination Input]"
+              name="Case 3"
+              startId="Package\Data Flow Task\Conditional Split.Outputs[Case 3]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Character Map Output]"
+              endId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+              name="Character Map Output"
+              startId="Package\Data Flow Task\Character Map.Outputs[Character Map Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Merge Output 1]"
+              endId="Package\Data Flow Task\Sort 2.Inputs[Sort Input]"
+              name="Merge Output 1"
+              startId="Package\Data Flow Task\Merge.Outputs[Merge Output 1]" />
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output1]"
+              endId="Package\Data Flow Task\Sort 1.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\OLE DB Source 1.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Sort Output]"
+              endId="Package\Data Flow Task\Merge.Inputs[Merge Input 1]"
+              name="Sort Output"
+              startId="Package\Data Flow Task\Sort 1.Outputs[Sort Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Sort Output1]"
+              endId="Package\Data Flow Task\Merge.Inputs[Merge Input 2]"
+              name="Sort Output"
+              startId="Package\Data Flow Task\Sort.Outputs[Sort Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Sort Output2]"
+              endId="Package\Data Flow Task\Character Map.Inputs[Character Map Input]"
+              name="Sort Output"
+              startId="Package\Data Flow Task\Sort 2.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Data Flow Task"
+          TopLeft="49.285715125045,48.9411771569698" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Data Flow Task\OLE DB Source"
+          TopLeft="323.75000551343,17.9705884873249" />
+        <NodeLayout
+          Size="158.4,41.6"
+          Id="Package\Data Flow Task\OLE DB Source 1"
+          TopLeft="106.428573241039,19.882353220019" />
+        <NodeLayout
+          Size="107.2,41.6"
+          Id="Package\Data Flow Task\Merge"
+          TopLeft="279.285719041922,161.352943439385" />
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Data Flow Task\Sort"
+          TopLeft="310.714291005719,80.2941187731536" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\Data Flow Task\Sort 1"
+          TopLeft="166.964288557671,87.9411777039301" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\Data Flow Task\Sort 2"
+          TopLeft="406.250006918396,186.397061437678" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="398.55000551343,59.5705884873249">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.76428549228899,41.5235302858287"
+              Start="0,0"
+              End="2.26428549228899,41.5235302858287">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5235302858287" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.5235302858287"
+                    Point2="0,41.5235302858287"
+                    Point3="4,41.5235302858287" />
+                  <mssgle:LineSegment
+                    End="2.26428549228899,41.5235302858287" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output1]"
+          TopLeft="185.628573241039,61.482353220019">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="34.5357153166313,26.4588244839111"
+              Start="0,0"
+              End="34.5357153166313,18.9588244839111">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.22941224195555" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.22941224195555"
+                    Point2="0,13.2294122419556"
+                    Point3="4,13.2294122419556" />
+                  <mssgle:LineSegment
+                    End="30.5357153166313,13.2294122419556" />
+                  <mssgle:CubicBezierSegment
+                    Point1="30.5357153166313,13.2294122419556"
+                    Point2="34.5357153166313,13.2294122419556"
+                    Point3="34.5357153166313,17.2294122419556" />
+                  <mssgle:LineSegment
+                    End="34.5357153166313,18.9588244839111" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output]"
+          TopLeft="220.164288557671,129.54117770393">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="96.188097150918,31.8117657354547"
+              Start="0,0"
+              End="96.188097150918,24.3117657354547">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.8063673906659" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.8063673906659"
+                    Point2="0,18.8063673906659"
+                    Point3="4,18.8063673906659" />
+                  <mssgle:LineSegment
+                    End="92.188097150918,18.8063673906659" />
+                  <mssgle:CubicBezierSegment
+                    Point1="92.188097150918,18.8063673906659"
+                    Point2="96.188097150918,18.8063673906659"
+                    Point3="96.188097150918,22.8063673906659" />
+                  <mssgle:LineSegment
+                    End="96.188097150918,24.3117657354547" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output1]"
+          TopLeft="359.514291005719,121.894118773154">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-10.0952386304634,39.4588246662312"
+              Start="0,0"
+              End="-10.0952386304634,31.9588246662312">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.3271286997426" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.3271286997426"
+                    Point2="0,23.3271286997426"
+                    Point3="-4,23.3271286997426" />
+                  <mssgle:LineSegment
+                    End="-6.09523863046337,23.3271286997426" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-6.09523863046337,23.3271286997426"
+                    Point2="-10.0952386304634,23.3271286997426"
+                    Point3="-10.0952386304634,27.3271286997426" />
+                  <mssgle:LineSegment
+                    End="-10.0952386304634,31.9588246662312" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Merge Output 1]"
+          TopLeft="386.485719041922,163.897061437678">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="72.9642878764744,22.5"
+              Start="0,0"
+              End="72.9642878764744,15">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="68.9642878764744,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="68.9642878764744,0"
+                    Point2="72.9642878764744,0"
+                    Point3="72.9642878764744,4" />
+                  <mssgle:LineSegment
+                    End="72.9642878764744,15" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="146.4,41.6"
+          Id="Package\Data Flow Task\Character Map"
+          TopLeft="533.928580521321,234.191179755031" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output2]"
+          TopLeft="512.650006918396,207.197061437678">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="94.4785736029249,26.9941183173535"
+              Start="0,0"
+              End="94.4785736029249,19.4941183173535">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="90.4785736029249,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="90.4785736029249,0"
+                    Point2="94.4785736029249,0"
+                    Point3="94.4785736029249,4" />
+                  <mssgle:LineSegment
+                    End="94.4785736029249,19.4941183173535" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\Data Flow Task\Conditional Split"
+          TopLeft="324.107148376655,267.647062577178" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Character Map Output]"
+          TopLeft="533.928580521321,254.991179755031">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-55.4214321446664,33.4558828221471"
+              Start="0,0"
+              End="-47.9214321446664,33.4558828221471">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-23.7107160723332,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-23.7107160723332,0"
+                    Point2="-27.7107160723332,0"
+                    Point3="-27.7107160723332,4" />
+                  <mssgle:LineSegment
+                    End="-27.7107160723332,29.4558828221471" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-27.7107160723332,29.4558828221471"
+                    Point2="-27.7107160723332,33.4558828221471"
+                    Point3="-31.7107160723332,33.4558828221471" />
+                  <mssgle:LineSegment
+                    End="-47.9214321446664,33.4558828221471" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Data Flow Task\Flat File Destination"
+          TopLeft="141.964288131923,351.76471081572" />
+        <NodeLayout
+          Size="180,41.6"
+          Id="Package\Data Flow Task\Flat File Destination 1"
+          TopLeft="365.178577647525,356.808828449373" />
+        <NodeLayout
+          Size="180,41.6"
+          Id="Package\Data Flow Task\Flat File Destination 2"
+          TopLeft="573.214295476067,345.338240053208" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Case 1]"
+          TopLeft="401.307148376655,309.247062577178">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-173.742860244732,42.5176482385419"
+              Start="0,0"
+              End="-173.742860244732,35.0176482385419">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.258824119271" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.258824119271"
+                    Point2="0,21.258824119271"
+                    Point3="-4,21.258824119271" />
+                  <mssgle:LineSegment
+                    End="-169.742860244732,21.258824119271" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-169.742860244732,21.258824119271"
+                    Point2="-173.742860244732,21.258824119271"
+                    Point3="-173.742860244732,25.258824119271" />
+                  <mssgle:LineSegment
+                    End="-173.742860244732,35.0176482385419" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-102.089516059866,26.258824119271,30.436171875,9.5537109375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Case 2]"
+          TopLeft="425.707148376655,309.247062577178">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="29.4714292708707,47.5617658721949"
+              Start="0,0"
+              End="29.4714292708707,40.0617658721949">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.3173941388607" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.3173941388607"
+                    Point2="0,19.3173941388607"
+                    Point3="4,19.3173941388607" />
+                  <mssgle:LineSegment
+                    End="25.4714292708707,19.3173941388607" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25.4714292708707,19.3173941388607"
+                    Point2="29.4714292708707,19.3173941388607"
+                    Point3="29.4714292708707,23.3173941388607" />
+                  <mssgle:LineSegment
+                    End="29.4714292708707,40.0617658721949" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-0.667918177064669,24.3173941388607,30.807265625,9.5732421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Case 3]"
+          TopLeft="437.907148376655,309.247062577178">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="225.307147099412,36.09117747603"
+              Start="0,0"
+              End="225.307147099412,28.59117747603">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.43889478375906" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.43889478375906"
+                    Point2="0,12.4388947837591"
+                    Point3="4,12.4388947837591" />
+                  <mssgle:LineSegment
+                    End="221.307147099412,12.4388947837591" />
+                  <mssgle:CubicBezierSegment
+                    Point1="221.307147099412,12.4388947837591"
+                    Point2="225.307147099412,12.4388947837591"
+                    Point3="225.307147099412,16.4388947837591" />
+                  <mssgle:LineSegment
+                    End="225.307147099412,28.59117747603" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="97.313417299706,17.4388947837591,30.6803125,9.5732421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Source 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
